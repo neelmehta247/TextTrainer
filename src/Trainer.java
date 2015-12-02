@@ -14,7 +14,7 @@ public class Trainer {
         for (int i = 0; i < text.length(); i++) {
             char x = text.charAt(i);
             if (x != ' ') {
-                if ((x < 'Z' && x > 'A') || x < 'z' && x > 'a') {
+                if (x != '.' && x != ',' && x != '?' && x != '!') {
                     w += x;
                 }
             } else {
